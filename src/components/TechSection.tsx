@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Card } from '@/components/ui/card';
+import { Link } from 'react-router-dom';
 import abstractTech from '@/assets/abstract-tech.jpg';
 import hologram from '@/assets/hologram.jpg';
 

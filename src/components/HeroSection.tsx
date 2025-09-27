@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import heroImage from '@/assets/hero-bg.jpg';
 
 const HeroSection = () => {
@@ -48,17 +49,19 @@ const HeroSection = () => {
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center animate-scale-in" style={{ animationDelay: '0.6s' }}>
           <Button 
+            asChild
             size="lg" 
             className="bg-gradient-primary hover:shadow-neon transition-all duration-300 font-orbitron text-lg px-8 py-4"
           >
-            EXPLORE PROJECTS
+            <Link to="/projects">EXPLORE PROJECTS</Link>
           </Button>
           <Button 
+            asChild
             variant="outline" 
             size="lg"
             className="border-neon-cyan text-neon-cyan hover:bg-neon-cyan/10 hover:shadow-glow-accent transition-all duration-300 font-orbitron text-lg px-8 py-4"
           >
-            CONTACT US
+            <Link to="/contact">CONTACT US</Link>
           </Button>
         </div>
       </div>

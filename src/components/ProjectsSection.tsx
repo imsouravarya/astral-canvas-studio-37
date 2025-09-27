@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const ProjectsSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -84,10 +85,11 @@ const ProjectsSection = () => {
                 </div>
                 
                 <Button 
+                  asChild
                   variant="ghost" 
                   className="group-hover:text-neon-cyan group-hover:bg-neon-cyan/10 transition-all duration-300 font-orbitron"
                 >
-                  EXPLORE PROJECT →
+                  <Link to="/projects">EXPLORE PROJECT →</Link>
                 </Button>
               </div>
               
